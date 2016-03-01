@@ -5,6 +5,9 @@ import tornado.web
 import pymongo
 import json
 from methods import db
+
+
+#TODO 首页请求
 class IndexHandler(tornado.web.RequestHandler):
     def get(self):
         # self.write(sample_data);

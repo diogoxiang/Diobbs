@@ -17,3 +17,5 @@ class IndexHandler(tornado.web.RequestHandler):
         username = self.get_argument("username")
         password = self.get_argument("password")
         self.write(username)
+
+

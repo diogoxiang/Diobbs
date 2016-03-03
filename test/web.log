@@ -1,0 +1,19 @@
+[E 160302 17:58:05 web:1524] Uncaught exception GET / (172.168.2.210)
+    HTTPServerRequest(protocol='http', host='172.168.2.210:9988', method='GET', uri='/', version='HTTP/1.1', remote_ip='172.168.2.210', headers={'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate, sdch', 'Host': '172.168.2.210:9988', 'Cache-Control': 'no-cache', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'Cookie': 'count="2|1:0|10:1456714704|5:count|4:NDY=|c41a458ca76e9f4e4170dce51810a1e0e8571cef69354e4d6b7690c6ea0c6ef4"; msid=c62ce715b9834eae8e925cde6679ab8d', 'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36', 'Connection': 'keep-alive', 'Pragma': 'no-cache', 'Upgrade-Insecure-Requests': '1'})
+    Traceback (most recent call last):
+      File "C:\Users\diogoxiang\AppData\Roaming\Python\Python35\site-packages\tornado\web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "E:/github/Diobbs/test/upload_tornado.py", line 24, in get
+        self.render("index.html", files=files)
+      File "C:\Users\diogoxiang\AppData\Roaming\Python\Python35\site-packages\tornado\web.py", line 699, in render
+        html = self.render_string(template_name, **kwargs)
+      File "C:\Users\diogoxiang\AppData\Roaming\Python\Python35\site-packages\tornado\web.py", line 803, in render_string
+        t = loader.load(template_name)
+      File "C:\Users\diogoxiang\AppData\Roaming\Python\Python35\site-packages\tornado\template.py", line 424, in load
+        self.templates[name] = self._create_template(name)
+      File "C:\Users\diogoxiang\AppData\Roaming\Python\Python35\site-packages\tornado\template.py", line 451, in _create_template
+        with open(path, "rb") as f:
+    FileNotFoundError: [Errno 2] No such file or directory: 'E:\\github\\Diobbs\\test\\templates\\index.html'
+[E 160302 17:58:05 web:1946] 500 GET / (172.168.2.210) 22.02ms
+[W 160302 17:58:05 web:1946] 404 GET /favicon.ico (172.168.2.210) 39.04ms
+[W 160302 18:00:48 web:1946] 404 GET /download/QQ%E5%9B%BE%E7%89%8720160105135349.jpg (172.168.2.210) 3.00ms

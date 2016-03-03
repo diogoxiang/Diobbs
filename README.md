@@ -16,3 +16,4 @@ templates：这里放模板文件，都是以html为扩展名的
 session 组件测试用例
 Pillow 测试用例
 新增 requirements.txt
+新增 qiniu 上传SDK
